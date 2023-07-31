@@ -1,179 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     font-size: 16px;
     --first-color: rgb(246, 246, 246);   
     --second-color: #ffff;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+ /*   outline: 1px solid red;   */
 }
-
-body {
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+.content {
     display: flex;
     flex-direction: row;
+
+}
+    
+.picture {
+    width: 40vw;
+    background-image: url(./img/photo-1585202900225-6d3ac20a6962.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.project-form {
-    padding: 32px 144px 0px 40px;
- 
+.left {
+    margin-left: 3vw;
+}
+.right {
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;    
+    background-color: rgb(228, 228, 228);
+    justify-content: center;;
 }
 
-.header-section {
-    height: 250px;
+.dummy-text {
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 80px;
+    font-weight: 500;
+}
+.remote-text {
+    margin: 40px 0 40px;
+}
+
+form {
+    background-color: #ffff;
+}
+.form {
+
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 10px 0 40px 0;
+    gap: 20px;
+}
+.form-title {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 650;
     width: 100%;
-    background-color: var(--first-color);
-    padding: 20px 144px 30px 45px;
 
-}
-.first-para {
-    margin-bottom: 2rem;
-}
-.second-para {
-margin-bottom: 3rem;
-
-}
-.first-para,
- .second-para {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.form-section {
-    background-color: var(--second-color);
-}
-.project-form {
-    display: grid;
-    grid-template-columns: 265px 250px;
 }
 .form-row {
-    width: 250px;
-    margin-bottom: 20px;
-}
-.form-row input {
-    font-size: 1.2rem;
-    width: 15rem;
-    border-radius: 5.5px;
-
+    width: 40%;
+    
 }
 .form-row label {
-    font-size: .7rem;
-    letter-spacing: 1.7px;
-    font-weight: 300;
-    width: 120px;
-    padding-right: 20px;
-}
-.last-section {
-    background-color: white;
-
-}
-
-.myButton {
-    border: none;
-
-
-    box-shadow: 0;
-    border-radius: 5.5px;
-    color: white;
-    background-color: #596D48;
-    font-size: 0.9rem;
-    font-weight: 800;
-
-    height: 45px;
-    width: 190px;
-    margin: 30px 0px 0px 40px;
-
-}
-.myButton:active {
-    background-color: #829e68;
-
-}
-.login {
-    margin: 26px 0px 0px 40px;
-}
-input{
-    border: none;
-    outline: none;
-    border: 2px solid #E5E7EB;
-}
-
-input[type='text']:focus,
-input[type='email']:focus, 
-input[type='tel']:focus,
-input[type='password']:focus {
-
-    border: none;
-    border: 2px solid#002efc;
-}
-
-body {
-    background-color: #E5E7EB;
-}
-
-header{
-    margin-top: 50px;
-}
-
-.right-section {
-    background-color: var(--first-color);
-}
-
-
-figure {
-    display: inline-block;
-    position: relative;
-}
-figure img {
+    text-transform: capitalize;
+    margin-bottom: 3px;
     display: block;
-    width: 500px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 425;
 }
-
-figure figcaption{
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    color: #fff;
-    padding: 10px;
+.form-row input {
+    background-color:  rgb(228, 228, 228);
+    font-size: 1.2em;
     border-radius: 5px;
-  }
-figure figcaption img {
-    height: 75px;
-    margin: auto;
+    height: 20px;
+    /*border: 1px solid black;*/
+    border: none;
+}
+.form-row input:focus {
+    outline: none;
+    border: 2.7px solid rgb(43, 114, 48);
+    height: 25px;
 
 }
 
 
-h3 {
-    margin-bottom: 20px;
+.btn-container {
+    margin-top: 20px;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(43, 114, 48);
+    background-color: #ffff;
+    border: 2.7px solid rgb(43, 114, 48);
+}
+.btn:active {
+    background-color: rgb(61, 172, 68);
+
 }
 
-a.login-link:visited {
-    color:  #596D48
-}
-/*
-body {
+.login {
     display: flex;
     flex-direction: row;
+    gap: 5px;
+    margin-top: 30px;
 }
-.side-background {
-    display: flex;
+.anchor {
+    color: rgb(43, 114, 48);
 }
-.legend {
-    background-color: black;
-    opacity: 50;
-    width: 40px;
-    height: 40px;
+.anchor:visited {
+    color: rgb(61, 172, 68);
 }
-.form-section {
-    background-color: red;
-}
-.odin-form {
-    width: 150vh;
-    border: None;    
 
+.invalid {
+    border: 2px solid red;
 }
-*/
+
+
+
+
